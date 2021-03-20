@@ -2,6 +2,7 @@ package ro.ase.cts.main;
 
 import ro.ase.cts.clase.singleton.Parlament;
 import ro.ase.cts.clase.singleton.lazy.ParlamentLazy;
+import ro.ase.cts.clase.singleton.lazy.Soba;
 
 public class main {
     public static void main(String[] args) {
@@ -21,6 +22,12 @@ public class main {
         ParlamentLazy parlamentLazy2 = ParlamentLazy.getInstance("Bulgaria", 300, 6, "nu");
         System.out.println(parlamentLazy1.toString());
         System.out.println(parlamentLazy2.toString());
+
+        System.out.println("=================");
+        Soba soba1 = Soba.getInstance(5, "yes", 4.5);
+        Soba soba2 = Soba.getInstance(6, "nu", 5.4);
+        System.out.println(soba1.toString());
+        System.out.println(soba2.toString());
 
     }
 }
