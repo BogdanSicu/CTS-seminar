@@ -5,21 +5,21 @@ import ro.ase.cts.Composite.Clase.Sectiune;
 
 public class Main {
     public static void main(String[] args) {
-        Produs produs1 = new Produs("desert");
-        Produs produs2 = new Produs("suc");
-        Produs produs3 = new Produs("fruct");
+        Produs prajitura = new Produs("prajitura");
+        Produs suc = new Produs("suc");
+        Produs fruct = new Produs("fruct");
 
 
-        Sectiune sectiune1 = new Sectiune("bauturi");
-        Sectiune sectiune2 = new Sectiune("desert");
+        Sectiune bauturi = new Sectiune("bauturi");
+        Sectiune desert = new Sectiune("desert");
 
-        sectiune1.adaugaNod(produs2);
-        sectiune2.adaugaNod(produs1);
-        sectiune2.adaugaNod(produs3);
+        bauturi.adaugaNod(suc);
+        desert.adaugaNod(prajitura);
+        desert.adaugaNod(fruct);
 
         Sectiune meniu = new Sectiune("meniu");
-        meniu.adaugaNod(sectiune1);
-        meniu.adaugaNod(sectiune2);
+        meniu.adaugaNod(bauturi);
+        meniu.adaugaNod(desert);
         meniu.printareElement();
 
 
