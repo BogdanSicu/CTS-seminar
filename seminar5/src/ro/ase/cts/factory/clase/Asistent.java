@@ -4,8 +4,6 @@ public class Asistent extends PersonalMedical{
 
     private int durataLucru;
 
-
-
     public Asistent(String nume, float salariu) {
         super(nume, salariu);
     }
